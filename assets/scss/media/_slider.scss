@@ -1,0 +1,50 @@
+@media ((min-width: 320px) and (max-width: 575px)) {
+    .hero {
+        height: 592px;
+        .swiper-slide {
+            .slide-wrapper {
+                padding-top: 65px;
+                .slide-content {
+                    width: auto;
+                    text-align: center;
+                    .slide-content__title {
+                        font-size: 36px;
+                    }
+                    .slide-content__subtitle {
+                        margin: 10px auto;
+                    }
+                    .hero__btn {
+                        margin-top: 33px;
+                        font-size: 14px;
+                    }
+                    &__add {
+                        margin: 31px auto  48px 65px;                        
+                        }
+                    }
+                }
+            }
+        
+
+        .swiper-pagination {
+           display: none;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            bottom: -58px;
+        }
+
+        .swiper-button-next {
+            right: 147px;
+        }
+
+        .swiper-button-prev {
+            right: 204px;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 18px;
+        }
+        }
+}

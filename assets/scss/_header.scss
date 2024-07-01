@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+$white: #fff;/*Белый цвет для текста color: $white;*/
+$black: #000;/*Черный цвет для текста color: $black;*/
+$grey: #737373;/*Серый цвет для текста color: $grey;*/
+
+.wrapper {
+    width: 1185px;
+    margin: 0 auto;
+}
+button,
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a {
+    color: #000;
+    &:hover {
+        color: #000;
+    }
+    &:visited {
+        color: #000;
+    }
+}
+ul {
+    list-style: none;
+}
+.btn {
+    border:none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 151px;
+    height: 38px;
+}
+.btn-white {
+    background: $white;
+    color: $black;
+}
+.btn-black {
+    background: $black;
+    color: $white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 96px;
+    .logo__image {
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        border-radius: 30px;
+        margin-right: 8px;
+    }
+
+    .logo__text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    margin-right: 96px;
+}
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+    }
+    .header__logo {
+        .logo__image {
+            background: $black;
+        }
+        .logo__text {
+            color: $black;
+        }
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        .navigation__menu {
+            margin: auto 0;
+            .close-menu {
+                display: none;
+            }
+            .menu__list {
+                display: flex;
+                gap: 26px;
+                &-active {
+                    a {
+                        color: $black;
+                    }
+                }
+                a {
+                    color: $grey;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }            
+        }
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .navigation__menu {
+        display: block;
+    }
+}
+

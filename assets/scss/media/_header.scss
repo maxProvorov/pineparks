@@ -1,0 +1,84 @@
+@media ((min-width: 320px) and (max-width: 575px)) {
+    /* Стили для бургер-меню */
+    .wrapper {
+        width: auto;
+        margin: 0 20px;
+    }
+    .header {
+        .header__wrapper {
+                width: 100%;
+            }
+        .header__logo {
+            margin-left: 20px;
+            .logo__image {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .header__left {
+            justify-content: space-between;
+            width: 100%;
+        }
+        .header__btn {
+            display: none;
+        }
+        .burger-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 18px;
+            height: 16px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }    
+        .burger-menu__line {
+            width: 100%;
+            height: 2px;
+            background-color: #292D32;
+        }
+        .header__navigation {
+            margin-right: 20px;
+            .navigation__menu {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+            }            
+                .navigation__menu.active {
+                    display: flex;
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 99;
+                }
+                .navigation__menu .menu__list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                }
+                .navigation__menu .menu__list li a {
+                    color: $white;
+                    font-size: 20px;
+                }            
+                .close-menu {
+                    display: block;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    background: transparent;
+                    color: $white;
+                    font-size: 30px;
+                    cursor: pointer;
+                    z-index: 100;
+                }
+        }
+    }
+}
