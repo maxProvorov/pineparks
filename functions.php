@@ -26,7 +26,6 @@ add_action('wp_enqueue_scripts', 'pineparks_scripts');
 
 function my_acf_blocks_init()
 {
-    // Проверяем наличие функции acf_register_block_type()
     if (function_exists('acf_register_block_type')) {
         // Регистрация блока Slider
         acf_register_block_type(
